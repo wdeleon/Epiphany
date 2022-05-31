@@ -1,1 +1,1 @@
-{"id":"6","nextId":null,"prevId":"5","imgFile":"00006.png","entryFn":"tempData.strip6subtitle = DOM['subtitle'].innerHTML;\r\n\t\tDOM['subtitle'].innerHTML = '<a href=\"../\">See a customized version used for a real comic strip</a>';","exitFn":"DOM['subtitle'].innerHTML = tempData.strip6subtitle;"}
+{"id":"6","nextId":null,"prevId":"5","imgFile":"00006.png"}

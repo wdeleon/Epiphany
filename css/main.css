@@ -1,0 +1,185 @@
+/* Scrollbars */
+html {
+    scrollbar-color: #dd7777 #e0e0e0;
+}
+
+
+/* Body */
+body {
+	color: #222222;
+	background-color: #92a8d1;
+	background-image: url('../img/background.png');
+	font-size: 14pt;
+	font-family: 'Georgia', 'Times New Roman', serif;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#page_body {
+	transition: background-color 5s linear 0s;
+}
+
+
+/* Main content container */
+#main {
+	min-width: 1200px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: transform 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+/* Header */
+header {
+	display: inline-block;
+}
+header h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 72pt;
+	font-weight: normal;
+	font-family: 'Georgia', serif;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+header h2 {
+	margin: 0px;
+	font-size: 24pt;
+	font-weight: normal;
+	font-style: italic;
+	text-align: right;
+	font-family: 'Georgia', serif;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer */
+footer {
+	font-family: 'Times New Roman', serif;
+}
+footer span {
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+
+/* Comic Strip Main Area */
+#comic_strip_area {
+	width: 100%;
+	padding: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: #ffffff;
+	border: solid 2px #333333;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.75);
+}
+
+
+/* Strip Navigation */
+#strip_nav a {
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+	opacity: 0.3;
+	transition: opacity 0.33s ease 0s;
+}
+#strip_nav a:hover {
+	opacity: 1.0;
+}
+#strip_nav a p {
+	font-size: 20pt;
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+
+/* Side Buttons */
+#side_buttons {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	z-index: 2;
+	margin-top: 20px;
+	margin-left: 20px;
+	text-align: center;
+	transition: transform 0.33s;
+}
+#side_buttons a {
+	display: inline-block;
+	font-size: 16pt;
+	font-family: 'Times New Roman', serif;
+	opacity: 0.7;
+	transition: opacity 0.33s ease 0s;
+	cursor: pointer;
+}
+#side_buttons a:hover {
+	opacity: 1.0;
+	text-shadow: 0px 0px 7px rgba(255, 255, 255, 1);
+}
+#side_buttons a:hover img {
+	filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 1));
+}
+#side_buttons a p {
+	display: inline-block;
+	margin-top: 0;
+}
+
+
+/* Control Panel */
+#controls {
+	padding: 10px;
+	text-align: left;
+	background: #ffffff;
+	border: solid 2px #333333;
+	box-shadow: 0 0 80px rgba(0, 0, 0, 1);
+	transition: transform 0.33s;
+	height: 600px;
+	min-height: 600px;
+}
+#controls h3 {
+	text-align: center;
+	font-size: 20pt;
+	font-family: 'Times New Roman', serif;
+}
+#controls h3 img {
+	transform: scale(75%, 75%) translate(0, 20%);
+}
+#controls button {
+	display: inline-block;
+	text-align: center;
+	font-size: 14pt;
+	font-family: 'Times New Roman', serif;
+}
+#controls button img {
+	transform: scale(75%, 75%) translate(0, 20%);
+}
+#controls input[type='range'] {
+	width: 40%;
+	background: #d3d3d3;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.controls_visible {
+	display: block;
+}
+.close_button_container {
+	text-align: center;
+	font-size: 20pt;
+	width: 100%;
+	margin-top: 30px;
+}
+#controls #settings_close_button {
+	font-size: 20pt;
+}

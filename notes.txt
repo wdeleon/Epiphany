@@ -1,0 +1,36 @@
+0. Cover strip
+
+1. What is it?
+	A framework for presenting comic strips on the web
+	Fully customizable environment in which to present a comic
+		- The presentation environment is often overlooked by artists - this is old thinking!
+
+2. Why create it?
+	Most importantly, because this interests me:
+		- Lifelong fan of comics as a storytelling medium
+	Most comic strip presentation systems are outdated:
+		- Either just WordPress fitted for comics, or look like they're websites from back in the 2000s
+			...Or some combination of the worst parts of both those things
+
+3. Goals:
+	Static hosting compatible:
+		- Free static hosting makes it accessible on more hosts with more choice
+		- Nothing about the functionality of most comic strips necessarily needs to be server-processed
+	Keep it lightweight in terms of processing power
+	Minimize bandwidth consumption:
+		- Most comics webpages are fairly wasteful, so do better
+
+4. Features:
+	Smart caching for a smoother user experience
+	Automatic visual scaling to fit more screens comfortably
+	Animation effects to give the presentation of comic a sense of life, instead of feeling static
+	Ability to custom-script actions and changes to the page when a comic enters or leaves view
+	
+5. How did I do it?
+	Leverage newer, more advanced asynchronous request APIs:
+		- No reason to reload the whole page for every strip
+		- All data loaded from simple, static text files containing JSON
+	Coded from scratch; no outside libraries to add unneeded bloat
+	Visual effects use modern animation APIs in JavaScript (requestAnimationFrame)
+
+6. Thanks!

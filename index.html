@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Epiphany! Framework</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Epiphany! Comics Framework" />
+		<meta name="author" content="Winston Deleon" />
+		<link rel="icon" id="favicon" type="image/png" href="img/icon.png" />
+		<link href="css/main.css" rel="stylesheet" />
+		<script type="text/JavaScript" src="js/dom.js"></script>
+		<script type="text/JavaScript" src="js/localdata.js"></script>
+		<script type="text/JavaScript" src="js/render.js"></script>
+		<script type="text/JavaScript" src="js/animation.js"></script>
+		<script type="text/JavaScript" src="js/loadjson.js"></script>
+		<script type="text/JavaScript" src="js/comic.js"></script>
+		<script type="text/JavaScript" src="js/strip.js"></script>
+		<script type="text/JavaScript" src="js/nav.js"></script>
+		<script type="text/JavaScript" src="js/settings.js"></script>
+		<script type="text/JavaScript" src="js/start.js"></script>
+	</head>
+	<body id="page_body">
+	
+		<section id="side_buttons">
+			<a id="settings_show_button" title="Site Settings">
+				<img src="img/gears.png" id="settings_symbol" alt="Settings" /><br />
+				<p>Settings</p>
+			</a>
+			<br />
+			
+			<a id="github_button" href="https://github.com/wdeleon" title="Source on Github">
+				<img src="img/github.png" id="settings_symbol" alt="Github" /><br />
+				<p>Github</p>
+			</a>
+		</section>
+		
+		
+		<div id="main">
+			<header id="page_header">
+				<h1 title="main title" id="main_title">Epiphany! Comics Framework</h1>
+				<h2 title="subtitle" id="subtitle">There's a Subtitle Here (Pay Attention)</h2>
+			</header>
+		
+			<section id="comic_strip_area">
+				<a id="strip_next">
+					<canvas id="main_canvas" title="" width="1" height="1"></canvas>
+				</a>
+				<nav id="strip_nav">
+					<a id="strip_nav_first" title="First Strip">
+						<p>&lt;&lt; First</p>
+					</a>
+					<a id="strip_nav_prev" title="Previous Strip">
+						<p>&lt; Previous</p>
+					</a>
+					<a id="strip_nav_next" title="Next Strip">
+						<p>Next &gt;</p>
+					</a>
+					<a id="strip_nav_last" title="Last Strip">
+						<p>Last &gt;&gt;</p>
+					</a>
+				</nav>
+			</section>
+	
+			<footer id="page_footer">
+				<span>Epiphany! Comics Framework</span><br />
+				&copy; Winston Deleon
+			</footer>
+		</div>
+		
+		
+		
+		<dialog id="controls">
+			<h3>
+				Settings
+			</h3>
+			<hr />
+			<p>
+				<input type="checkbox" id="save_place_checkbox" name="save_place_checkbox" checked />
+				<label for="save_place_checked"> Save my place between visits</label>
+			</p>
+			<p>
+				<input type="checkbox" id="precache_checkbox" name="precache_checkbox" checked />
+				<label for="precache_checked"> Use pre-caching for better performance (Recommended)</label>
+			</p>
+			<p>
+				Visual Scaling:
+				<input type="range" min="50" max="150" value="100" step="1" id="scale_slider" />
+				<button id="scale_apply">Apply</button>
+				<button id="scale_reset">Reset</button><br />
+				<span id="scale_display">(100%)</span>
+			</p>
+			<br /><br />
+			<p>
+				<em>Some settings require the use of browser local storage.<br />
+				Please enable this feature if your settings aren't being saved between visits.</em><br /><br />
+				<button id="clear_settings">Clear Local Storage</button> (Warning: resets all settings to their defaults!)
+			</p>
+			<hr />
+			<div class="close_button_container">
+			<button id="settings_close_button">
+				Close
+			</button>
+			</div>
+		</dialog>
+		
+	</body>
+</html>
